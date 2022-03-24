@@ -274,8 +274,8 @@
                 UMASK: 002
             volumes:
                 - ${DOCKERDIR}/overseerr:/config
-            ports:
-                - ${HOST1_IP}:${www_overseerr}:${www_overseerr}
+            #ports:
+            #    - ${HOST1_IP}:${www_overseerr}:${www_overseerr}
             restart: unless-stopped
       
         qbittorrent:
